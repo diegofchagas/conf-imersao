@@ -1,0 +1,248 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+body {
+  max-width: 1200px;
+  margin: 0 auto;
+  color: #161922;
+  vertical-align: baseline;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: 100%;
+  background-color: #dbd5d0;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+header div img {
+  margin: 0 auto;
+}
+
+h1,
+h2,
+h4 {
+  text-align: center;
+}
+
+.data {
+  color: #161922;
+  font-size: 2rem;
+  line-height: 34px;
+}
+
+main {
+  font-family: "Encode Sans", sans-serif;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 0 2%;
+  height: auto;
+}
+
+main h1 {
+  color: #705846;
+}
+
+main h3,
+.obs {
+  text-align: center;
+}
+
+main h3 .geracao {
+  color: black;
+  font-weight: 600;
+}
+.texto {
+  text-align: center;
+}
+
+.texto p:nth-child(2) {
+  margin-top: 10px;
+  margin-bottom: 40px;
+}
+
+.obs {
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+main h2 span {
+  text-align: center;
+  color: #705846;
+}
+
+main h3 span {
+  color: #705846;
+}
+
+main a {
+  margin: 0 auto;
+}
+
+.local {
+  color: #705846;
+  text-align: center;
+  font-size: 1.188rem;
+  font-weight: 700;
+  margin-top: -15px;
+}
+
+.inscricao {
+  text-align: center;
+  width: 20%;
+  background-color: #705846;
+  font-size: 1rem;
+  padding: 16px 20px;
+  border-radius: 20px;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.inscricao:hover {
+  background-color: #9b7f6a;
+}
+
+.container-vendas {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.container-vendas .card {
+  width: 300px;
+  height: 300px;
+  text-align: center;
+}
+
+.container-vendas .card span {
+  font-size: 1.2rem;
+}
+
+.container-vendas .card .divido {
+  font-size: 0.675rem;
+  font-weight: 500;
+}
+
+.camisa {
+  margin: 0 auto;
+  max-width: 150px;
+  border: 5px solid #705846;
+  border-radius: 10px;
+}
+
+.container-vendas p span {
+  font-weight: 500;
+  color: #a35b24;
+}
+
+footer {
+  width: 100%;
+  text-align: center;
+  font-family: "Encode Sans", sans-serif;
+  background-color: #705846;
+  color: #f2f0ef;
+  padding-top: 1em;
+}
+
+footer div .endereco{
+ margin-bottom:  5px;
+}
+
+
+footer span {
+  display: block;
+}
+
+footer .contatos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  padding: 2rem 2rem;
+  gap: 1.5rem;
+}
+
+footer .contatos li{
+  border-left: 2px solid #afa399;
+ padding-left: 8px;
+  
+}
+
+footer .contatos li:nth-child(1){
+  border-left: none;
+}
+
+.social-media {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.social-media .footer-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  width: 2.5rem;
+  height: 2.5rem;
+  color: white;
+  border-radius: 50%;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.social-media .footer-link i {
+  font-size: 1.25rem;
+}
+
+#instagram {
+  background: linear-gradient(#7f37c9, #ff2992, #ff9807);
+}
+
+#whatsapp {
+  background-color: #25d366;
+}
+
+@media (max-width: 375px) {
+  main h1 {
+    margin-top: 1rem;
+    font-size: 2rem;
+    line-height: 24px;
+  }
+
+  main p {
+    text-align: center;
+    font-size: 0.813rem;
+  }
+
+  .inscricao {
+    width: 35%;
+    font-size: 1rem;
+    padding: 16px 20px;
+  }
+
+  .data {
+    color: #161922;
+    font-size: 1.5rem;
+    line-height: 34px;
+  }
+
+  footer p:nth-child(1){
+    font-size: .900rem;
+  }
+}
+
+@media (max-width: 600px) {
+  main h1 {
+    margin-top: 1rem;
+    font-size: 1.8rem;
+    line-height: 24px;
+  }
+}
