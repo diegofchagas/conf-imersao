@@ -181,6 +181,10 @@ footer .contatos li:nth-child(1) {
   border-left: none;
 }
 
+footer .contatos li span {
+  color: #161922
+}
+
 .social-media {
   display: flex;
   justify-content: center;
