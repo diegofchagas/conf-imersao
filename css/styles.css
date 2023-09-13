@@ -182,6 +182,10 @@ footer .contatos li:nth-child(1) {
 }
 
 footer .contatos li span {
+  text-decoration: none;
+}
+
+footer .contatos li span {
   color: #161922
 }
 
