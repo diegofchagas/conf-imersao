@@ -92,7 +92,12 @@ main a {
   margin-top: -15px;
 }
 
-.inscricao {
+.container-inscricao {
+  display: flex;
+  justify-content: center;
+}
+
+.container-inscricao .inscricao {
   text-align: center;
   width: 20%;
   background-color: #705846;
@@ -102,9 +107,10 @@ main a {
   border: none;
   color: white;
   cursor: pointer;
+  font-weight: 700;
 }
 
-.inscricao:hover {
+.container-inscricao .inscricao:hover {
   background-color: #9b7f6a;
 }
 
@@ -145,15 +151,13 @@ footer {
   width: 100%;
   text-align: center;
   font-family: "Encode Sans", sans-serif;
-  background-color: #705846;
-  color: #f2f0ef;
+  color: #161922;
   padding-top: 1em;
 }
 
-footer div .endereco{
- margin-bottom:  5px;
+footer div .end-evento {
+  margin-bottom: 5px;
 }
-
 
 footer span {
   display: block;
@@ -167,13 +171,13 @@ footer .contatos {
   gap: 1.5rem;
 }
 
-footer .contatos li{
+footer .contatos li {
   border-left: 2px solid #afa399;
- padding-left: 8px;
-  
+  padding-left: 8px;
+  font-weight: 600;
 }
 
-footer .contatos li:nth-child(1){
+footer .contatos li:nth-child(1) {
   border-left: none;
 }
 
@@ -210,7 +214,49 @@ footer .contatos li:nth-child(1){
   background-color: #25d366;
 }
 
-@media (max-width: 375px) {
+@media (min-width: 320px) and (max-width: 374px) {
+  main h1 span {
+    font-size: 1.5rem;
+  }
+
+  .texto-camisas {
+    font-size: 1rem;
+  }
+
+  .data {
+    color: #161922;
+    font-size: 1.2rem;
+  }
+
+  .local {
+    font-size: 1rem;
+  }
+
+  .container-inscricao .inscricao {
+    width: 100px;
+    font-size: 0.79rem;
+    padding: 16px 20px;
+  }
+
+  footer {
+    background-color: #705846;
+    color: #f2f0ef;
+  }
+
+  footer .contatos li {
+    font-size: smaller;
+  }
+
+  footer .contatos li span {
+    color: #f2f0ef;
+  }
+
+  footer .endereco {
+    font-size: smaller;
+  }
+}
+
+@media (max-width: 695px) {
   main h1 {
     margin-top: 1rem;
     font-size: 2rem;
@@ -222,10 +268,9 @@ footer .contatos li:nth-child(1){
     font-size: 0.813rem;
   }
 
-  .inscricao {
-    width: 35%;
-    font-size: 1rem;
-    padding: 16px 20px;
+  .container-inscricao .inscricao {
+    width: 40%;
+    font-size: 0.938rem;
   }
 
   .data {
@@ -234,15 +279,16 @@ footer .contatos li:nth-child(1){
     line-height: 34px;
   }
 
-  footer p:nth-child(1){
-    font-size: .900rem;
+  footer p:nth-child(1) {
+    font-size: 0.9rem;
   }
-}
 
-@media (max-width: 600px) {
-  main h1 {
-    margin-top: 1rem;
-    font-size: 1.8rem;
-    line-height: 24px;
+  footer .contatos li span {
+    color: #f2f0ef;
+  }
+
+  footer {
+    background-color: #705846;
+    color: #f2f0ef;
   }
 }
