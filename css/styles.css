@@ -118,13 +118,49 @@ main a {
   display: flex;
   justify-content: center;
   margin-top: 1rem;
+  margin-bottom: 10px;
 }
 
 .container-vendas .card {
-  width: 300px;
-  height: 300px;
+  width: 100%;
   text-align: center;
+  background-color: white;
+  color: #161922;
+  display: flex;
+  padding: .800rem;
+  align-items: center;
+
 }
+
+.container-vendas .card ul{
+  display: flex;
+  flex-direction: column;
+  gap: .500rem;
+}
+
+.container-vendas .card .valor{
+ font-size: 1.5rem;
+ font-weight: 600;
+}
+
+.container-vendas .modelo-camisa{
+  color: #161922;
+  font-weight: 500;
+}
+
+.container-vendas .card ul li{
+  display: flex;
+  flex-direction: column;
+  gap:10px;
+  font-weight: 500;
+}
+
+.container-vendas .vendedora{
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #ea6a08;
+}
+
 
 .container-vendas .card span {
   font-size: 1.2rem;
@@ -140,6 +176,7 @@ main a {
   max-width: 150px;
   border: 5px solid #705846;
   border-radius: 10px;
+  margin-top: 10px;
 }
 
 .container-vendas p span {
@@ -186,7 +223,8 @@ footer .contatos li span {
 }
 
 footer .contatos li span {
-  color: #161922
+  color: #161922;
+  font-size: .900rem;
 }
 
 .social-media {
