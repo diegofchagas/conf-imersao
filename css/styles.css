@@ -94,8 +94,27 @@ main a {
 
 .container-inscricao {
   display: flex;
+  flex-direction: column;
   justify-content: center;
 }
+.container-inscricao p{
+ margin-top: 10px;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ font-weight: 700;
+ color: #e32121;
+ gap: 2px;
+ font-size: 1rem;
+}
+.container-inscricao p span{
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  color: #e43838;
+ }
 
 .container-inscricao .inscricao {
   text-align: center;
