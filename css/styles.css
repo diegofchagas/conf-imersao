@@ -53,6 +53,10 @@ main h3,
   text-align: center;
 }
 
+main .obs{
+  font-size: 1.3rem;
+}
+
 main h3 .geracao {
   color: black;
   font-weight: 600;
